@@ -20,10 +20,14 @@ library(reconPlots)
 #read in data
 whale_data <- read.csv("HW3Data.csv")
 whale_data
-#create regression model 
+
+#PART 1##########
+
+#create regression model:
+
 #risk 
-#bid (annual payment for household, WTP)
-#vote
+#bid (annual payment for household, WTP/cost of program to the respondant)
+#vote (0 or 1, no or yes)
 #NEP (measure of environmental concern)
 #income
 #age
@@ -33,5 +37,19 @@ whale_data
 whale_lm1 <- lm(vote ~ risk + bid + NEP + income + age , data = whale_data)
 whale_lm1
 
+#Interperet Regression Coefficients (google doc)
+#Income: Middle
+#Age: over sixty 
+```
+
+```{r}
+#2. Based on this regression, what can you say about the value of a single prevented whale death? (Hint: Think about how risk reduction for all whales translates into the number of whale deaths avoided)
+
+#Hints
+#Solve for bid
+#Risk Reduction (20%), 5 whales saved, this is a constant 
+
+whale_lm2 <- lm(bid ~ risk + vote + NEP + income + age , data = whale_data)
+whale_lm2
 ```
 

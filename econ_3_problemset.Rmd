@@ -35,7 +35,7 @@ whale_data
  
 # A. Saturated model: contains all predictor variables 
 whale_lm1 <- lm(vote ~ risk + bid + NEP + income + age , data = whale_data)
-whale_lm1
+summary(whale_lm1)
 
 summary(whale_lm1)
 intercept <- whale_lm1$coefficients[1]
@@ -63,6 +63,12 @@ age_to30 <-  whale_lm1$coefficients[12]
 #Solve for bid
 #Risk Reduction (20%), 5 whales saved, this is a constant 
 
+#1. Rearranged equation in terms of bid ~ other variables
+#2. Multipled each calculated coefficient by 0.04 (20% / 5 whales = 4% or 0.04)
+#3. Total value in terms of dollars for mitigating death of one whale = $69.39
 
+bid ~ risk + vote + NEP + income + age
+
+avg_vote <- mean(data$vote) # 0.714
 ```
 

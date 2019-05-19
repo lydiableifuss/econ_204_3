@@ -37,6 +37,20 @@ whale_data
 whale_lm1 <- lm(vote ~ risk + bid + NEP + income + age , data = whale_data)
 whale_lm1
 
+summary(whale_lm1)
+intercept <- whale_lm1$coefficients[1]
+risk <- whale_lm1$coefficients[2]
+bid <- whale_lm1$coefficients[3]
+nep <- whale_lm1$coefficients[4]
+income_one <- whale_lm1$coefficients[5]
+income_poor <- whale_lm1$coefficients[6]
+income_rich <- whale_lm1$coefficients[7]
+income_veryrich <- whale_lm1$coefficients[8]
+age_to50 <- whale_lm1$coefficients[9]
+age_to40 <-  whale_lm1$coefficients[10]
+age_to60 <-  whale_lm1$coefficients[11]
+age_to30 <-  whale_lm1$coefficients[12]
+
 #Interperet Regression Coefficients (google doc)
 #Income: Middle
 #Age: over sixty 
@@ -49,7 +63,6 @@ whale_lm1
 #Solve for bid
 #Risk Reduction (20%), 5 whales saved, this is a constant 
 
-whale_lm2 <- lm(bid ~ risk + vote + NEP + income + age , data = whale_data)
-whale_lm2
+
 ```
 

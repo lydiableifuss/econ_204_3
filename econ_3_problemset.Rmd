@@ -75,7 +75,7 @@ tot_ave_nep <- mean(whale_data$NEP)
 tot_ave_nep # 38.366
 
 #Average Vote: 0.714
-#Average NEP (WTP): 38.366
+#Average NEP: 38.366
 
 #0%
 bid_zero <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*0) - tot_ave_vote)/bid

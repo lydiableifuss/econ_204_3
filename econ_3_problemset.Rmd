@@ -64,11 +64,23 @@ age_to30 <-  whale_lm1$coefficients[12]
 #Risk Reduction (20%), 5 whales saved, this is a constant 
 
 #1. Rearranged equation in terms of bid ~ other variables
-#2. Multipled each calculated coefficient by 0.04 (20% / 5 whales = 4% or 0.04)
+#2. Multipled each calculated coefficient by 0.04 (20% / 5 whales = 4% or 0.04), determine WTP for vessel speed reduction programs from 0 - 4% 
 #3. Total value in terms of dollars for mitigating death of one whale = $69.39
 
-bid ~ risk + vote + NEP + income + age
+tot_ave_vote <- mean(whale_data$vote) 
+tot_ave_vote # 0.714
+tot_ave_nep <- mean(whale_data$NEP)
+tot_ave_nep # 38.366
 
-avg_vote <- mean(data$vote) # 0.714
+#Average Vote: 0.714
+#Average NEP (WTP): 38.366
+
+#0%
+
+#4%
+
+#bid ~ risk + vote + NEP + income + age
+
+
 ```
 

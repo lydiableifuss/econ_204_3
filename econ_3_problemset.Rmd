@@ -78,17 +78,16 @@ tot_ave_nep # 38.366
 #Assuming age to 30 and poor income. 
 
 #0%
-bid_zero <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*0) - tot_ave_vote)/bid
+bid_zero <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*0) - tot_ave_vote)/(-1*bid)
 
-bid_zero # -35.06003 
+bid_zero #35.06003 
 
 #4%
-bid_four <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*4) - tot_ave_vote)/bid
+bid_four <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*4) - tot_ave_vote)/(-1*bid)
 
-bid_four #-37.84343
+bid_four #37.84343
 
-
-wtp_one_whale <- bid_zero - bid_four
+wtp_one_whale <- bid_four - bid_zero
 wtp_one_whale #2.7834 
 
 

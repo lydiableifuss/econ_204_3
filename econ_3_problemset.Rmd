@@ -96,7 +96,7 @@ wtp_one_whale #2.7834
 ```{r}
 #3. Pick three arbitrary respondents. For each of those respondents, estimate their WTP for a VSR program offering 60% risk reduction.
 
-# Random participants chosen: 
+# Random participants chosen and their WTP for VSR Progam: 
 
 #71: income_poor, age_to50, NEP: 27
 
@@ -112,6 +112,36 @@ bid_269 #  -14.31479
 
 bid_336 <- (intercept + age_to30 + income_rich + (nep*55) + (risk*60)-tot_ave_vote)/(-1*bid)
 bid_336 #  327.8921 
+
+
+```
+
+```{r}
+#4 Now repeat this process and estimate the mean WTP for a VSR program offering 60% risk reduction among Santa Barbara County households.
+
+tot_ave_vote <- mean(whale_data$vote) 
+tot_ave_vote # 0.714
+
+tot_ave_nep <- mean(whale_data$NEP)
+tot_ave_nep # 38.366
+
+ave_inc <- whale_data %>% 
+  count(income == "very_rich", income == "rich", income == "poor", income == "one_percent", income == "middle")
+
+ave_inc # income_rich  
+
+
+ave_age <- whale_data %>% 
+  count(age == "tothirty", age == "toforty", age == "tofifty", age == "tosixty", age == "oversixty")
+
+ave_age # age_to50
+
+
+# Use the average NEP, middle income, and middle age bracket (to 50) to find the average bid
+bid_county <- (intercept + age_to50 + (nep*tot_ave_nep) + (risk*60) - tot_ave_vote)/(-1*bid)
+
+bid_county
+#  64.47601
 
 
 ```

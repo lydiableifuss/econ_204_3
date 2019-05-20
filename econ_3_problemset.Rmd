@@ -147,11 +147,11 @@ mode_age <- whale_data %>%
 mode_age # age_to30
 
 
-# Use the average NEP, rich income, and to 50 age bracket to find the average bid in sb county 
-bid_county <- (intercept + age_to50 + (nep*tot_ave_nep) + (risk*60) - tot_ave_vote)/(-1*bid)
+# Use the average NEP, income one percent, and to 30 age bracket to find the average bid in sb county 
+bid_county <- (intercept + age_to30 + income_one + (nep*tot_ave_nep) + (risk*60) - tot_ave_vote)/(-1*bid)
 
 bid_county
-#  64.47601
+#  82.503
 ```
 
 ```{r}
@@ -159,15 +159,15 @@ bid_county
 
 tot_ben <- bid_county*150000
 tot_ben
-# 9,671,402 
+# 12,375,410
 ```
 
 ```{r}
 #6 Based only on these benefits, do the benefits of the VSR program outweigh the costs?
 
 #Total Cost: 7,000,000
-#Total Ben: 9,671,402
-#Net Ben: 2,671,402 
+#Total Ben: 12,375,410
+#Net Ben: 5,375,410 
 ```
 
 ```{r}

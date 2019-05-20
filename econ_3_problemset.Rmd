@@ -96,7 +96,11 @@ bid_four #37.84343
 wtp_one_whale <- bid_four - bid_zero
 wtp_one_whale #2.7834 
 
+#sam notes
+#calculate bid for basline risk and then recalaculate for risk at x+4%
 
+# risk_coef = whale_lm$coefficients['risk']
+#a lot of them say intercept 
 ```
 
 ```{r}

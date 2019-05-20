@@ -24,6 +24,9 @@ whale_data
 #1. Create a linear probability model that predicts a respondent’s probability of voting ‘yes’ on the ballot based on their age, income, NEP score, the risk reduction offered by the program, and the cost of the program to that respondent. Show the model and interpret the regression coefficients.
 
 #create regression model:
+#Show the model in a nice way (write the formal model equtaion, not with numbers or with, no worries), make a table 
+
+#risk, coefficient estimate (round here, to 3, he doesnt care), somethign that pertains to standard error or p value
 
 #risk 
 #bid (annual payment for household, WTP/cost of program to the respondant)
@@ -77,6 +80,8 @@ tot_ave_nep # 38.366
 #Average Vote: 0.714
 #Average NEP: 38.366
 #Assuming age to 30 and poor income. 
+
+#how much would your bid change due to an additional 4% risk reduction 
 
 #0%
 bid_zero <- (intercept + age_to30 + income_poor + (nep*tot_ave_nep) + (risk*0) - tot_ave_vote)/(-1*bid)

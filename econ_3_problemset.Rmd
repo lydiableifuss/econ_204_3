@@ -135,16 +135,16 @@ tot_ave_vote # 0.714
 tot_ave_nep <- mean(whale_data$NEP)
 tot_ave_nep # 38.366
 
-ave_inc <- whale_data %>% 
+mode_inc <- whale_data %>% 
   count(income == "very_rich", income == "rich", income == "poor", income == "one_percent", income == "middle")
 
-ave_inc # income_rich  
+mode_inc # income_onepercent  
 
 
-ave_age <- whale_data %>% 
+mode_age <- whale_data %>% 
   count(age == "tothirty", age == "toforty", age == "tofifty", age == "tosixty", age == "oversixty")
 
-ave_age # age_to50
+mode_age # age_to30
 
 
 # Use the average NEP, rich income, and to 50 age bracket to find the average bid in sb county 

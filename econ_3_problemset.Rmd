@@ -168,6 +168,13 @@ tot_ben
 ```{r}
 #7 Suppose the price of a carbon credit is $Z per ton, at what price Z* will the shipping industry decide to adopt the VSR for purely self-interested reasons? (Note: if ships voluntarily reduce speed, then the $7 million cost (noted above) of implementing the VSR would be avoided)
 
+#60% risk reducition costs the shipper: 
+#$1,000 to reduce by 20 tons
+#$50 to reduce by 1 ton 
 
+#at any cost of carbon credti that is less than $50 (??)
+
+#%60 risk reduction means 15 whales saved (20% * 3)
+#15 * 2.78 = WTP (not cost of 7 millions means ignore this cost)
 ```
 

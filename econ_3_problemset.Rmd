@@ -55,6 +55,7 @@ age_to30 <-  whale_lm1$coefficients[12]
 #Income: Middle
 #Age: over sixty 
 
+
 ```
 
 ```{r}

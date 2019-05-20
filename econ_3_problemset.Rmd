@@ -99,9 +99,19 @@ wtp_one_whale #2.7834
 # Random participants chosen: 
 
 #71: income_poor, age_to50, NEP: 27
+
+bid_71 <- (intercept + age_to50 + income_poor + (nep*27) + (risk*60)-tot_ave_vote)/(-1*bid)
+bid_71 # -101.4938
+
 #269: income_veryrich, age_to40, NEP: 32
+
+bid_269 <- (intercept + age_to40 + income_veryrich + (nep*32) + (risk*60)-tot_ave_vote)/(-1*bid)
+bid_269 #  -14.31479 
+
 #336: income_rich, age_to30, NEP: 55
 
+bid_336 <- (intercept + age_to30 + income_rich + (nep*55) + (risk*60)-tot_ave_vote)/(-1*bid)
+bid_336 #  327.8921 
 
 
 ```

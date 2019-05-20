@@ -138,12 +138,26 @@ ave_age <- whale_data %>%
 ave_age # age_to50
 
 
-# Use the average NEP, middle income, and middle age bracket (to 50) to find the average bid
+# Use the average NEP, rich income, and to 50 age bracket to find the average bid in sb county 
 bid_county <- (intercept + age_to50 + (nep*tot_ave_nep) + (risk*60) - tot_ave_vote)/(-1*bid)
 
 bid_county
 #  64.47601
+```
 
+```{r}
+#5 If there are 150,000 households in Santa Barbara County, estimate the total benefit of a VSR program to these households.
 
+tot_ben <- bid_county*150000
+tot_ben
+# 9,671,402 
+```
+
+```{r}
+#6 Based only on these benefits, do the benefits of the VSR program outweigh the costs?
+
+#Total Cost: 7,000,000
+#Total Ben: 9,671,402
+#Net Ben: 2,671,402 
 ```
 

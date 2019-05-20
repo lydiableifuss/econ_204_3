@@ -95,5 +95,14 @@ wtp_one_whale #2.7834
 
 ```{r}
 #3. Pick three arbitrary respondents. For each of those respondents, estimate their WTP for a VSR program offering 60% risk reduction.
+
+# Random participants chosen: 
+
+#71: income_poor, age_to50, NEP: 27
+#269: income_veryrich, age_to40, NEP: 32
+#336: income_rich, age_to30, NEP: 55
+
+
+
 ```
 

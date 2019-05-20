@@ -161,3 +161,13 @@ tot_ben
 #Net Ben: 2,671,402 
 ```
 
+```{r}
+#INFO: When a container ship reduces its speed, it not only reduces the risk of colliding with a whale but also emits less carbon per distance traveled. For this reason, the WhaleStrikes Group Project recommended enrolling container ships in voluntary carbon trading markets to mitigate fatal whale strikes. Assume that for any ship transiting the Santa Barbara Channel, a speed reduction (that results in a 60% risk reduction) will cost the shipper $1,000, but will result in 20 fewer tons of CO2 emitted per transit.
+```
+
+```{r}
+#7 Suppose the price of a carbon credit is $Z per ton, at what price Z* will the shipping industry decide to adopt the VSR for purely self-interested reasons? (Note: if ships voluntarily reduce speed, then the $7 million cost (noted above) of implementing the VSR would be avoided)
+
+
+```
+

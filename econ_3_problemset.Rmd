@@ -185,5 +185,7 @@ tot_ben
 
 #%60 risk reduction means 15 whales saved (20% * 3)
 #15 * 2.78 = WTP (not cost of 7 millions means ignore this cost)
+
+
 ```
 

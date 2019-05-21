@@ -187,5 +187,9 @@ tot_ben
 #15 * 2.78 = WTP (not cost of 7 millions means ignore this cost)
 
 
+social_value <- (wtp_one_whale*15*150000)
+
+social_value #6262649
+
 ```
 
